@@ -27,13 +27,13 @@ const Header = ({ headerShadow }) =>
             <span className="text-white pl-2">Bamburgh</span>
           </NavbarBrand>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/">Home</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/">HOME</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/blog">Blog</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/blog">OCAT</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/example-page">Template Page</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/example-page">VEAAS</NavLink>
           </NavItem>
           <NavItem>
             <NavLink tag={Link} className="d-block mr-1" to="#/">Link</NavLink>
