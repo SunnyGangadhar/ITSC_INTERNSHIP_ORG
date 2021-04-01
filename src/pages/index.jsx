@@ -55,7 +55,7 @@ const IndexPage = () =>
                   <div className="speaker">
                       <div>
                         <img
-                          src={""}
+                          src={avatar2}
                           alt="User"
                           style={{ width: "180px" }}
                         ></img>
@@ -71,7 +71,7 @@ const IndexPage = () =>
                   <div className="speaker">
                       <div>
                         <img
-                          src={""}
+                          src={avatar3}
                           alt="User"
                           style={{ width: "180px" }}
                         ></img>
@@ -87,7 +87,7 @@ const IndexPage = () =>
                   <div className="speaker">
                       <div>
                         <img
-                          src={""}
+                          src={avatar4}
                           alt="User"
                           style={{ width: "180px" }}
                         ></img>
@@ -103,7 +103,7 @@ const IndexPage = () =>
                   <div className="speaker">
                       <div>
                         <img
-                          src={""}
+                          src={avatar5}
                           alt="User"
                           style={{ width: "180px" }}
                         ></img>
@@ -119,7 +119,7 @@ const IndexPage = () =>
                   <div className="speaker">
                       <div>
                         <img
-                          src={""}
+                          src={avatar6}
                           alt="User"
                           style={{ width: "180px" }}
                         ></img>
