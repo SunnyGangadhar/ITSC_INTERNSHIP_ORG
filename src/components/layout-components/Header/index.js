@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Link } from '@reach/router';
 import { Nav, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 
-import projectLogo from '../../../assets/images/react.svg';
+import projectLogo from '../../../assets/images/UC-2axqrm7.jpeg';
 
 const Header = ({ headerShadow }) =>
   <Fragment>
@@ -20,26 +20,22 @@ const Header = ({ headerShadow }) =>
             <i className="bg-transparent">
               <img
                 alt="Bamburgh React UI Kit with Reactstrap Free"
-                style={{ width: `50px` }}
-                src={projectLogo}
-              />
+                className = "image-logo"
+                src={projectLogo}/>
             </i>
-            <span className="text-white pl-2">Bamburgh</span>
+            {/* <span className="text-white pl-2"></span> */}
           </NavbarBrand>
           <NavItem>
             <NavLink tag={Link} className="d-block mr-1" to="/">HOME</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/blog">OCAT</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/ocat">OCAT</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="/example-page">VEAAS</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/veaas">VEAAS</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} className="d-block mr-1" to="#/">Link</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink tag={Link} disabled className="d-block mr-1" to="#/">Disabled</NavLink>
+            <NavLink tag={Link} className="d-block mr-1" to="/devops">DEVOPS</NavLink>
           </NavItem>
         </Nav>
       </div>

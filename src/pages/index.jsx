@@ -41,7 +41,7 @@ const IndexPage = () =>
                         <img
                           src={avatar1}
                           alt="User"
-                          style={{ width: "180px" }}
+                          // style={{ width: "180px" }}
                         ></img>
                       </div>
                       <div className="webkit-center">
@@ -57,7 +57,7 @@ const IndexPage = () =>
                         <img
                           src={avatar2}
                           alt="User"
-                          style={{ width: "180px" }}
+                          // style={{ width: "180px" }}
                         ></img>
                       </div>
                       <div className="webkit-center">
@@ -73,7 +73,7 @@ const IndexPage = () =>
                         <img
                           src={avatar3}
                           alt="User"
-                          style={{ width: "180px" }}
+                          // style={{ width: "180px" }}
                         ></img>
                       </div>
                       <div className="webkit-center">
@@ -89,7 +89,7 @@ const IndexPage = () =>
                         <img
                           src={avatar4}
                           alt="User"
-                          style={{ width: "180px" }}
+                          // style={{ width: "180px" }}
                         ></img>
                       </div>
                       <div className="webkit-center">
@@ -105,7 +105,7 @@ const IndexPage = () =>
                         <img
                           src={avatar5}
                           alt="User"
-                          style={{ width: "180px" }}
+                          // style={{ width: "180px" }}
                         ></img>
                       </div>
                       <div className="webkit-center">
@@ -121,7 +121,7 @@ const IndexPage = () =>
                         <img
                           src={avatar6}
                           alt="User"
-                          style={{ width: "180px" }}
+                          // style={{ width: "180px" }}
                         ></img>
                       </div>
                       <div className="webkit-center">
