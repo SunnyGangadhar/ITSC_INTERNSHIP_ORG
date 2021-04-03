@@ -1,13 +1,28 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import '../CSS/card.css';
+import { useRouteData } from 'react-static';
 
 const Devops = () => {
+  const { devops } = useRouteData();
   return (
     <div className="default-content">
-      <div className="content">
-        <h1>DEVOPS Home Page</h1>
-        <br />
-        {/* All Posts: */}
+      <div className="content container devops">
+        <div className="row">        
+          {devops.map(devop =>
+           <div className="col-md-6 col-lg-3 pb-3" key={devop.id}>          
+         <Link to={`/devops/${devop.id}/`}>
+         <div className="card"  >
+           <div className="name">
+             <h2> {devop.nameOfProject}</h2>
+           </div>
+           <div className="card-overlay">
+             <p>{devop.description}</p>           
+           </div>
+         </div>
+         </Link>
+         </div> )}          
+         </div>
       </div>
     </div>
   );

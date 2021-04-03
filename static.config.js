@@ -1,5 +1,6 @@
 import path from 'path';
 import posts from './src/data/posts.json';
+import devops from './src/data/devops.json'
 
 // Typescript support in static.config.js is not yet supported, but is coming in a future update!
 
@@ -19,6 +20,19 @@ export default {
       }),
       path: `/blog`,
     },
+    {
+      children: devops.map((devop) => ({
+        getData: () => ({
+          devop,
+        }),
+        path: `/${devop.id}`,
+        template: `src/containers/Devop`,
+      })),
+      getData: () => ({
+        devops,
+      }),
+      path: `/devops`,
+    },   
   ],
   plugins: [
     [

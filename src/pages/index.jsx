@@ -12,9 +12,7 @@ const IndexPage = () =>
     <div className="content">
     <div style={{ textAlign: "center" }}>
                 <h1> HomePage for Scheduling Events </h1>
-                <p>
                   <h3> ITSC Event planning and Scheduling </h3>
-                </p>
               </div>
               <div className="row pb-3" >
                 <div className="col-lg-10 offset-lg-1">
