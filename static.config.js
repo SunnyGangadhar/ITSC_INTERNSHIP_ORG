@@ -1,6 +1,8 @@
 import path from 'path';
 import posts from './src/data/posts.json';
 import devops from './src/data/devops.json'
+import veaas from './src/data/veaas.json'
+import ocat from './src/data/ocat.json'
 
 // Typescript support in static.config.js is not yet supported, but is coming in a future update!
 
@@ -32,7 +34,33 @@ export default {
         devops,
       }),
       path: `/devops`,
-    },   
+    }, 
+    {
+      children: veaas.map((veaas) => ({
+        getData: () => ({
+          veaas,
+        }),
+        path: `/${veaas.id}`,
+        template: `src/containers/veaas`,
+      })),
+      getData: () => ({
+        veaas,
+      }),
+      path: `/veaas`,
+    },  
+    {
+      children: ocat.map((ocat) => ({
+        getData: () => ({
+          ocat,
+        }),
+        path: `/${ocat.id}`,
+        template: `src/containers/ocat`,
+      })),
+      getData: () => ({
+        ocat,
+      }),
+      path: `/ocat`,
+    },        
   ],
   plugins: [
     [

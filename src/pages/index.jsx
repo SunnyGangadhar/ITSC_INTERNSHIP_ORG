@@ -53,7 +53,7 @@ const IndexPage = () =>
                   <div className="speaker">
                       <div>
                         <img
-                          src={avatar2}
+                          src={avatar3}
                           alt="User"
                           // style={{ width: "180px" }}
                         ></img>
@@ -69,7 +69,7 @@ const IndexPage = () =>
                   <div className="speaker">
                       <div>
                         <img
-                          src={avatar3}
+                          src={avatar2}
                           alt="User"
                           // style={{ width: "180px" }}
                         ></img>
