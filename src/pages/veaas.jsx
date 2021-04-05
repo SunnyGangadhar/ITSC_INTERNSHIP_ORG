@@ -4,12 +4,12 @@ import '../CSS/card.css';
 import { useRouteData } from 'react-static';
 
 const Veaas = () => {
-  const { veaas } = useRouteData();
+  const { veaasData } = useRouteData();
   return (
     <div className="default-content">
       <div className="content container devops">
         <div className="row">        
-          {veaas.map(veaas =>
+          {veaasData.map(veaas =>
            <div className="col-md-6 col-lg-3 pb-3" key={veaas.id}>          
          <Link to={`/veaas/${veaas.id}/`}>
          <div className="card"  >

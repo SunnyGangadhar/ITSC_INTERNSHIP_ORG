@@ -3,27 +3,27 @@ import { useRouteData } from "react-static";
 import { Link } from "@reach/router";
 import "../CSS/card.css";
 
-const OcatComponent = () => {
-  const { devop } = useRouteData();
+const VeaasItemComponent = () => {
+  const { veaas } = useRouteData();
 
   return (
     <div className="default-content">
       <div className="content">
-        <Link to="/ocat/">{`<`} Back</Link>
+        <Link to="/veaas/">{`<`} Back</Link>
         <br />
-        <h3>{ocat.nameOfProject}</h3>
-        <p>{ocat.aboutProject}</p>
+        <h3>{veaas.nameOfProject}</h3>
+        <p>{veaas.aboutProject}</p>
         <br />
 
         <div className="row">
           <div className="col">
             <p>
               <strong> Members:</strong>
-              {ocat.members}
+              {veaas.members}
             </p>
             <p>
               <strong> Advisor:</strong>
-              {ocat.advisor}
+              {veaas.advisor}
             </p>
           </div>
         </div>
@@ -31,15 +31,15 @@ const OcatComponent = () => {
           <div className="col-lg-6">
             <div className="item-responsive item-responsive-mid">
               <iframe
-                title={ocat.nameOfProject}
-                src={ocat.mediaLink}
+                title={veaas.nameOfProject}
+                src={veaas.mediaLink}
                 allow="autoplay; fullscreen"
                 allowFullScreen=""
               ></iframe>
             </div>
           </div>
           <div className="col-lg-6">
-            <img src={ocat.imageLink} alt={`${ocat.nameOfProject} Image`} />
+            <img src={veaas.imageLink} alt={`${veaas.nameOfProject} Image`} />
           </div>
         </div>
       </div>
@@ -47,4 +47,4 @@ const OcatComponent = () => {
   );
 };
 
-export default OcatComponent;
+export default VeaasItemComponent;

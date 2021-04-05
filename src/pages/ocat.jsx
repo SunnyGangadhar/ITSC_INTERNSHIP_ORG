@@ -4,12 +4,12 @@ import '../CSS/card.css';
 import { useRouteData } from 'react-static';
 
 const Ocat = () => {
-  const { ocat } = useRouteData();
+  const { ocatData } = useRouteData();
   return (
     <div className="default-content">
       <div className="content container devops">
         <div className="row">        
-          {ocat.map(ocat =>
+          {ocatData.map(ocat =>
            <div className="col-md-6 col-lg-3 pb-3" key={ocat.id}>          
          <Link to={`/ocat/${ocat.id}/`}>
          <div className="card"  >
