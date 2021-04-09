@@ -16,10 +16,10 @@ const Header = ({ headerShadow }) =>
       )}>
       <div className="container-fluid">
         <Nav pills className="mr-auto align-items-center">
-          <NavbarBrand to="/" title="Bamburgh React UI Kit with Reactstrap Free">
+          <NavbarBrand to="/" title="University of Cincinnati">
             <i className="bg-transparent">
               <img
-                alt="Bamburgh React UI Kit with Reactstrap Free"
+                alt="University of Cincinnati"
                 className = "image-logo"
                 src={projectLogo}/>
             </i>
