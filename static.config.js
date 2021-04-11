@@ -9,19 +9,19 @@ import ocatData from './src/data/ocat.json'
 export default {
   entry: path.join(__dirname, `src`, `index.jsx`),
   getRoutes: () => [
-    {
-      children: posts.map((post) => ({
-        getData: () => ({
-          post,
-        }),
-        path: `/post/${post.id}`,
-        template: `src/containers/Post`,
-      })),
-      getData: () => ({
-        posts,
-      }),
-      path: `/blog`,
-    },
+    // {
+    //   children: posts.map((post) => ({
+    //     getData: () => ({
+    //       post,
+    //     }),
+    //     path: `/post/${post.id}`,
+    //     template: `src/containers/Post`,
+    //   })),
+    //   getData: () => ({
+    //     posts,
+    //   }),
+    //   path: `/blog`,
+    // },
     {
       children: devops.map((devop) => ({
         getData: () => ({

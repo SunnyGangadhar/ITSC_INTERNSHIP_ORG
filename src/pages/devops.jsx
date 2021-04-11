@@ -10,7 +10,8 @@ const Devops = () => {
       <div className="content container devops">
         <div className="row">        
           {devops.map(devop =>
-           <div className="col-md-6 col-lg-3 pb-3" key={devop.id}>          
+           <div className="col-md-6 col-lg-3 pb-3" key={devop.id}>
+             {/* key ={devop.id} is very important and should be unique as react will identify the DOM changes based on unique key */}
          <Link to={`/devops/${devop.id}/`}>
          <div className="card"  >
            <div className="name">
